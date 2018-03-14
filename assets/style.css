@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'SegoeUI';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SegoeUI'), url('fonts/segoeuiz.woff') format('woff');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14pt;
+    line-height: 1.5;
+    font-family: 'SegoeUI', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: #515f67;
+}
+
+header {
+    background-image: url("images/_ photo.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 20vw;
+}
+.nav {
+    position: fixed;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 15% 0;
+    color: #fff;
+    background-color: rgba(53, 63, 70, 0.4);
+    font-weight: bold;
+    font-size: 0.875rem;
+    height: 5vw;
+}
+
+.font-size-2vw {
+    font-size: 2vw;
+}
+
+.header-nav {
+    display: none;
+}
+
+.openbtn {
+    font-size: 0.875rem;
+    cursor: pointer;
+    margin-left: 0.625rem;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3.75rem;
+    color: white;
+}
+
+.sidenav a {
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    text-decoration: none;
+    font-size: 1.3125rem;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 1.75rem;
+    margin-left: 3.125rem;
+}
+.header-logo {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.color-blue {
+    color: #4bcaff;
+}
+
+.header-nav {
+    display: none;
+}
+
+.nav-paragraphe {
+    margin-left: 0.625rem;
+}
+
+.nav-paragraphe a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1vw;
+}
+.nav-paragraphe a:hover {
+    color: #4bcaff;
+    border: solid #4bcaff 1px;
+}
+
+@media screen and (min-width: 641px) {
+    .sidenav {
+        display: none;
+    }
+    .openbtn {
+        display: none;
+    }
+    .header-nav {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 5vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+}
