@@ -21,9 +21,9 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 14pt;
+    font-size: 16px;
     line-height: 1.5;
-    font-family: 'SegoeUI', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'SegoeUI', Arial, Helvetica, sans-serif;
     vertical-align: baseline;
 }
 
@@ -32,21 +32,26 @@ body {
 }
 
 header {
-    background-image: url("images/_ photo.png");
+    background-image: url("images/header.png");
     background-repeat: repeat-x;
-    background-size: contain;
-    height: 20vw;
+    background-size: cover;
+    height: 41vw;
 }
-.nav {
-    position: fixed;
-    width: 70%;
+.header-padding {
+    padding: 0 10%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 0 15% 0;
+    justify-content: space-between;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     color: #fff;
     background-color: rgba(53, 63, 70, 0.4);
     font-weight: bold;
-    font-size: 0.875rem;
+    font-size:  0.875rem;
     height: 5vw;
 }
 
@@ -56,6 +61,7 @@ header {
 
 .header-nav {
     display: none;
+    margin-top: 1%;
 }
 
 .openbtn {
@@ -95,9 +101,10 @@ header {
     margin-left: 3.125rem;
 }
 .header-logo {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .color-blue {
     color: #4bcaff;
@@ -114,13 +121,99 @@ header {
 .nav-paragraphe a {
     text-decoration: none;
     color: #fff;
-    font-size: 1vw;
+    font-size: 1.75vw;
 }
 .nav-paragraphe a:hover {
     color: #4bcaff;
     border: solid #4bcaff 1px;
 }
-
+.header-quote {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-quote p {
+    background-color: rgba(53, 63, 70, 0.4);
+    color: white;
+    font-size: 100%;
+    font-weight: lighter;
+    text-align: center;
+}
+.services {
+    background-color: #4bcaff;
+    width: 100%;
+    color: white;
+}
+.services-padding {
+    padding: 0 10%;
+}
+.underline {
+    text-decoration: underline white;
+}
+.display-grid-row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+}
+.service {
+    padding: 10px;
+}
+.portfolio {
+    background-color: white;
+    width: 100%;
+    color: black;
+}
+.black-underline {
+    text-decoration: underline black;
+}
+.portfolio-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+}
+.chose-image {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+button:hover {
+    color: #4bcaff;
+    border: solid #4bcaff 1px;
+}
+.padding {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.portfolio img {
+    max-width: 100%;
+    height: auto;
+}
+.portfolio img:hover {
+    background-color: rgba(53, 63, 70, 0.4);
+}
+.images {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px 5px;
+    align-self: center;
+}
+footer {
+    background-color: rgba(53, 63, 70, 0.4);
+    width: 100%;
+    height: 200px;
+}
 @media screen and (min-width: 641px) {
     .sidenav {
         display: none;
@@ -129,11 +222,35 @@ header {
         display: none;
     }
     .header-nav {
-        width: 50%;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
         height: 5vw;
+    }
+    .null {
+        display: none;
+    }
+    .header-logo {
+        width: 50%;
+    }
+    .header-quote p {
+        font-size: 200%;
+    }
+    .display-grid-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+    }
+    .portfolio-image {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px 5px;
+    }
+    .chose-image {
+        display: inline;
     }
 }
 
