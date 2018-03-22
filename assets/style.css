@@ -1,10 +1,3 @@
-@font-face {
-    font-family: 'SegoeUI';
-    font-style: normal;
-    font-weight: normal;
-    src: local('SegoeUI'), url('fonts/segoeuiz.woff') format('woff');
-}
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,7 +16,7 @@ time, mark, audio, video {
     border: 0;
     font-size: 16px;
     line-height: 1.5;
-    font-family: 'SegoeUI', Arial, Helvetica, sans-serif;
+    font-family: SegoeUI, Arial, Helvetica, sans-serif;
     vertical-align: baseline;
 }
 
@@ -43,6 +36,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 .nav {
     width: 100%;
@@ -52,16 +46,15 @@ header {
     background-color: rgba(53, 63, 70, 0.4);
     font-weight: bold;
     font-size:  0.875rem;
-    height: 5vw;
+    height: 10vw;
 }
 
-.font-size-2vw {
-    font-size: 2vw;
+.font-size-4vw {
+    font-size: 4vw;
 }
 
 .header-nav {
     display: none;
-    margin-top: 1%;
 }
 
 .openbtn {
@@ -109,11 +102,6 @@ header {
 .color-blue {
     color: #4bcaff;
 }
-
-.header-nav {
-    display: none;
-}
-
 .nav-paragraphe {
     margin-left: 0.625rem;
 }
@@ -121,7 +109,7 @@ header {
 .nav-paragraphe a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.75vw;
+    font-size: 1.2vw;
 }
 .nav-paragraphe a:hover {
     color: #4bcaff;
@@ -146,7 +134,7 @@ header {
     color: white;
 }
 .services-padding {
-    padding: 0 10%;
+    padding: 5% 10%;
 }
 .underline {
     text-decoration: underline white;
@@ -163,6 +151,7 @@ header {
     background-color: white;
     width: 100%;
     color: black;
+    padding: 5% 0;
 }
 .black-underline {
     text-decoration: underline black;
@@ -199,15 +188,34 @@ button:hover {
 .portfolio img {
     max-width: 100%;
     height: auto;
+    opacity: 0.8;
 }
 .portfolio img:hover {
-    background-color: rgba(53, 63, 70, 0.4);
+    background-color: rgba(53, 63, 70, 1);
 }
 .images {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px 5px;
     align-self: center;
+    padding: 0 10%;
+}
+
+.default-padding {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+.visit-me {
+    border: solid thin black;
+    color: black;
 }
 footer {
     background-color: rgba(53, 63, 70, 0.4);
@@ -225,6 +233,7 @@ footer {
         display: flex;
         flex-direction: row;
         height: 5vw;
+        margin-top: 0;
     }
     .null {
         display: none;
@@ -251,6 +260,10 @@ footer {
     }
     .chose-image {
         display: inline;
+    }
+    .default-padding {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
