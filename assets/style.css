@@ -298,6 +298,12 @@ footer a {
     text-decoration: none;
     color: #515f67;
 }
+.block {
+    display: block;
+}
+.none {
+    display: none;
+}
 @media screen and (min-width: 746px) {
     .sidenav {
         display: none;
