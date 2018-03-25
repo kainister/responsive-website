@@ -288,9 +288,15 @@ b {
     color: white;
 }
 footer {
-    background-color: rgba(53, 63, 70, 0.4);
-    width: 100%;
-    height: 200px;
+    background-color: #353f47;
+    color: #515f67;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+}
+footer a {
+    text-decoration: none;
+    color: #515f67;
 }
 @media screen and (min-width: 746px) {
     .sidenav {
@@ -377,7 +383,9 @@ footer {
         background: transparent;
         border: solid white 1px;
     }
-}
-
-@media screen and (min-width: 1025px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
