@@ -32,11 +32,11 @@ header {
 }
 .header-padding {
     padding: 0 10%;
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 .nav {
     width: 100%;
@@ -137,7 +137,7 @@ header {
     padding: 5% 10%;
 }
 .underline {
-    text-decoration: underline white;
+    border-bottom: solid white 1px;
 }
 .display-grid-row {
     display: grid;
@@ -154,13 +154,13 @@ header {
     padding: 5% 0;
 }
 .black-underline {
-    text-decoration: underline black;
+    border-bottom: solid black 1px;
 }
 .portfolio-image {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 10%;
+    padding: 0 10% 5%;
 }
 .chose-image {
     display: flex;
@@ -211,18 +211,88 @@ button:hover {
 
 iframe {
     max-width: 100%;
-    height: auto;
 }
 .visit-me {
     border: solid thin black;
     color: black;
+}
+.title {
+    padding-bottom: 5%;
+}
+.default-para {
+    padding-bottom: 5%;
+}
+.twitter{
+    background-color: #4bcaff;
+    color: white;
+}
+.twitter-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4%;
+}
+.fa-twitter {
+    color: white;
+}
+.whoIs {
+    background-image: url("images/bgphoto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.JohnDoe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.header-John {
+    padding-bottom: 4%;
+}
+.icon {
+    border: solid white 1px;
+}
+.JohnDoe div p {
+    padding-bottom: 4%;
+}
+.testimonials {
+    background-color: white;
+}
+.testimonials-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+b {
+    font-size: 200%;
+    font-style: oblique;
+}
+#contact {
+    background-image: url("images/contact.png");
+    background-repeat: repeat-x;
+    background-size: cover;
+    padding: 5% 10%;
+    color: white;
+}
+#input-text {
+    width: 100%;
+}
+#message {
+    width: 100%;
+    height: 150px;
+}
+#button {
+    background-color: #4bcaff;
+    color: white;
 }
 footer {
     background-color: rgba(53, 63, 70, 0.4);
     width: 100%;
     height: 200px;
 }
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 746px) {
     .sidenav {
         display: none;
     }
@@ -264,6 +334,48 @@ footer {
     .default-padding {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .JohnDoe {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+    .contact-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:    "text firstPara"
+                                "email secondPara"
+                                "textarea textarea"
+                                "button _";
+        grid-gap: 10px;
+    }
+    #first-para {
+        grid-area: firstPara;
+    }
+    #second-para {
+        grid-area: secondPara;
+    }
+    #input-text {
+        grid-area: text;
+    }
+    #input-email {
+        grid-area: email;
+    }
+    #textarea {
+        grid-area: textarea;
+    }
+    #button {
+        grid-area: button;
+    }
+    input {
+        width: 100%;
+        background: transparent;
+        border: solid white 1px;
+    }
+    textarea {
+        width: 100%;
+        background: transparent;
+        border: solid white 1px;
     }
 }
 
